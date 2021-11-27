@@ -1,0 +1,25 @@
+.nav_bar {
+    display: flex;
+}
+
+.nav_bar .left {
+    flex-grow: 2;
+}
+
+.nav_bar .right{
+    flex-grow: 4;
+
+}
+
+.navsite{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navsite li{
+    margin: 20px;
+}
+
+.navsite li a{
+    text-decoration: none;
+}

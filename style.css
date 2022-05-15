@@ -8,6 +8,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -112,7 +113,6 @@ section {
   grid-template-rows: auto;
 }
 
-
 .about-me__grid-container p {
   margin-left: 25px;
   margin-bottom: 12px;
@@ -126,14 +126,18 @@ section {
 }
 
 .about-me___info-section img {
-    width: 200px;
-    border-radius: 200px;
-    align-self: center;
-    margin-bottom: 16px;
+  width: 200px;
+  border-radius: 200px;
+  align-self: center;
+  margin-bottom: 16px;
 }
 
 .about-me__grid-container p {
   width: 80%;
+}
+
+.about-me__description {
+  text-align: justify;
 }
 
 .about-me__grid-container a {

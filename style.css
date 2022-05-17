@@ -4,6 +4,7 @@
   --grey2: #404040;
   --just-white: #f2f2f1;
   --contrast1: #ffda4a;
+  --contrast-red: #e60000;
   --contrast2: #f6a901;
 }
 
@@ -32,13 +33,22 @@ main {
 }
 
 section {
+  position: relative;
   border-top: 1px solid var(--contrast1);
   background-color: var(--black1);
   width: 100%;
 }
 
 section h2 {
-  color: var(--contrast1);
+  color: var(--just-white);
+}
+
+section > hr {
+  position: absolute;
+  width: 45px;
+  top: 47px;
+  left: 25px;
+  border-color: var(--contrast-red);
 }
 
 .home {
@@ -164,6 +174,8 @@ section h2 {
 
   margin-top: 16px;
   margin-bottom: 16px;
+
+  
 }
 
 .education {
@@ -205,11 +217,11 @@ section h2 {
   margin-right: 8px;
 }
 
-.item:nth-child(2) .item__info-container .item__logo {
+.item:nth-child(3) .item__info-container .item__logo {
   background-image: url(assets/img/Usac_logo_1.svg);
 }
 
-.item:nth-child(3) .item__info-container .item__logo {
+.item:nth-child(4) .item__info-container .item__logo {
   background-image: url(assets/img/Liceo_Canadiense_logo.png);
 }
 
@@ -271,6 +283,11 @@ section h2 {
   margin: 15px 10% 15px 0;
 }
 
+.skills .underline {
+  top: 47px;
+  left: auto;
+  right: 40px;
+}
 .portfolio {
   padding-bottom: 15px;
 }
@@ -338,7 +355,7 @@ section h2 {
   margin-bottom: 16px;
 }
 
-.frase-container{
+.frase-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,12 +364,12 @@ section h2 {
 
 .contact .frase {
   font-size: 1.8rem;
-  color: var(--grey1);  
+  color: var(--grey1);
   text-align: center;
 }
 
-footer{
-  height:35px ;
+footer {
+  height: 35px;
   padding: 12px;
   background-color: var(--grey2);
   display: flex;
@@ -360,15 +377,14 @@ footer{
   align-items: center;
 }
 
-.icons{
+.icons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
 }
 
-
-.github{  
+.github {
   height: 30px;
   width: 30px;
   background-image: url(assets/img/github.png);
@@ -376,15 +392,14 @@ footer{
   background-position: center;
   background-size: cover;
   border-radius: 60px;
-  
 }
 
-.linkedin{
+.linkedin {
   height: 30px;
   width: 30px;
   background-image: url(assets/img/linkedin-3-64.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 60px;  
+  border-radius: 60px;
 }

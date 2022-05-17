@@ -286,7 +286,7 @@ section > hr {
 .skills .underline {
   top: 47px;
   left: auto;
-  right: 40px;
+  right: 10%;
 }
 .portfolio {
   padding-bottom: 15px;

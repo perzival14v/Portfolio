@@ -34,7 +34,7 @@ nav {
 
 .link-container a {
   width: 100%;
-  height: 10vh;
+  height: 12.5vh;
 
   font-size: 1.4rem;
   text-decoration: none;
@@ -46,9 +46,50 @@ nav {
 }
 
 
+.home{
+  height: 100vh;
+}
 
+.about-me{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.about-me__grid-container{
+  grid-template-columns: repeat(auto-fit, minmax(300px, 50%));
+  grid-template-rows: repeat(auto-fit);
+  grid-template-areas: 
+    "me education"
+    "description education";
+  margin-right: 120px;
+
+  
+  height: 100%;  
+  justify-self: center;
+  align-self: center;
+}
+
+.about-me___info-section{
+  grid-area: me;
+}
+
+.about-me___description-section{
+  grid-area: description;
+}
+
+.education{
+  grid-area: education;
+}
+
+.languages{
+  grid-area: language;
+}
 
 
 .home__button-container{
-    display: none;
+  
+  display: none;
 }

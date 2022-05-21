@@ -36,8 +36,7 @@ section {
   position: relative;
   border-top: 1px solid var(--contrast1);
   background-color: var(--black1);
-  width: 100%;
-  padding-bottom: 25px;  
+  width: 100%;  
 }
 
 section h2 {
@@ -127,18 +126,19 @@ section > hr {
 
 .about-me__grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 100%));
   grid-auto-rows: auto;  
   align-items: center;
-  justify-items: center;
+  justify-items: center;    
+  
 }
 
 .about-me___info-section {
   margin-top: 24px;
   display: flex;
   flex-direction: column;
-  width: 80%;  
-  justify-items: center;
+  width: 90%;    
+  justify-content: center;
   align-items: center;
 }
 
@@ -148,27 +148,29 @@ section > hr {
   margin-bottom: 16px;
 }
 
-.about-me___info-section > div{
-  width: 100%;
+.about-me___info-section p{  
+  margin-bottom: 4px;
+  font-size: 1.4rem;
 }
 
 .about-me___description-section{
-  max-width: 80%;  
+  display: flex;
+  flex-direction: column;
+  width: 85%;    
+  justify-content: center;
+  align-items: center;  
 }
 
-.about-me__grid-container p {  
+.about-me___description-section p {  
   margin-bottom: 12px;
   font-size: 1.6rem;  
-}
-
-.about-me__description {
-  text-align: justify;
+  text-align: justify;  
 }
 
 .about-me__grid-container a {
-  text-decoration: none;
-  width: 100%;
+  text-decoration: none;    
   height: 50px;
+  width: 100%;
   border-radius: 10px;
   justify-self: center;
 
@@ -182,12 +184,20 @@ section > hr {
 
   margin-top: 16px;
   margin-bottom: 16px;
-
   
 }
 
-.education {
-  background-color: var(--black1);
+.education{
+  position: relative;
+  width: 100%;
+}
+
+.education hr {
+  position: absolute;
+  width: 45px;
+  top: 47px;
+  left: 25px;  
+  border-color: var(--contrast-red);
 }
 
 .education h2 {
@@ -195,15 +205,14 @@ section > hr {
   margin: 15px 0 15px 25px;
 }
 
-.item {
-  width: calc(100%-25px);
+.item {  
   margin-left: 25px;
   margin-bottom: 30px;
 }
 
-.education .item h3 {
+.item h3 {
   font-size: 1.8rem;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   text-decoration: dotted;
 }
 
@@ -216,6 +225,10 @@ section > hr {
   font-size: 1.3rem;
 }
 
+.item__info-container p {
+  font-size: 1.0rem;
+}
+
 .item__logo {
   width: 30px;
   height: 30px;
@@ -223,13 +236,14 @@ section > hr {
   background-size: cover;
   background-position: center;
   margin-right: 8px;
+  align-self: baseline;
 }
 
-.item:nth-child(3) .item__info-container .item__logo {
+.education .item:nth-child(1) .item__info-container .item__logo {
   background-image: url(assets/img/Usac_logo_1.svg);
 }
 
-.item:nth-child(4) .item__info-container .item__logo {
+.education .item:nth-child(2) .item__info-container .item__logo {
   background-image: url(assets/img/Liceo_Canadiense_logo.png);
 }
 
@@ -239,7 +253,7 @@ section > hr {
 }
 
 .sub-item-container {
-  max-width: 100%;
+  max-width: 450px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -250,6 +264,7 @@ section > hr {
   align-items: center;
   justify-items: flex-end;
   width: 100%;
+  
 }
 
 .item__stars {

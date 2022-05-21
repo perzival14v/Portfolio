@@ -1,0 +1,54 @@
+:root {
+  --black1: #1a1a1a;
+  --grey1: #7c7c7d;
+  --grey2: #404040;
+  --just-white: #f2f2f1;
+  --contrast1: #ffda4a;
+  --contrast-red: #e60000;
+  --contrast2: #f6a901;
+}
+
+header {
+  display: block;
+  position: relative;
+  height: 0px;
+}
+
+nav {
+  position: fixed;
+  top: 25vh;
+  right: 0px;
+  width: 100px;
+  height: 50vh;
+  z-index: 1;
+
+  border: 1px solid var(--contrast1);
+
+  border-radius: 15px 0px 0px 15px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-container a {
+  width: 100%;
+  height: 10vh;
+
+  font-size: 1.4rem;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.home__button-container{
+    display: none;
+}

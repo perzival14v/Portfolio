@@ -37,6 +37,7 @@ section {
   border-top: 1px solid var(--contrast1);
   background-color: var(--black1);
   width: 100%;
+  padding-bottom: 25px;  
 }
 
 section h2 {
@@ -47,7 +48,7 @@ section > hr {
   position: absolute;
   width: 45px;
   top: 47px;
-  left: 25px;
+  left: 25px;  
   border-color: var(--contrast-red);
 }
 
@@ -126,31 +127,38 @@ section > hr {
 
 .about-me__grid-container {
   display: grid;
-  grid-template-columns: minmax(300px, 1fr);
-  grid-template-rows: auto;
-}
-
-.about-me__grid-container p {
-  margin-left: 25px;
-  margin-bottom: 12px;
-  font-size: 1.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;  
+  align-items: center;
+  justify-items: center;
 }
 
 .about-me___info-section {
   margin-top: 24px;
   display: flex;
   flex-direction: column;
+  width: 80%;  
+  justify-items: center;
+  align-items: center;
 }
 
 .about-me___info-section img {
   width: 200px;
-  border-radius: 200px;
-  align-self: center;
+  border-radius: 200px;  
   margin-bottom: 16px;
 }
 
-.about-me__grid-container p {
-  width: 80%;
+.about-me___info-section > div{
+  width: 100%;
+}
+
+.about-me___description-section{
+  max-width: 80%;  
+}
+
+.about-me__grid-container p {  
+  margin-bottom: 12px;
+  font-size: 1.6rem;  
 }
 
 .about-me__description {
@@ -159,7 +167,7 @@ section > hr {
 
 .about-me__grid-container a {
   text-decoration: none;
-  width: 90%;
+  width: 100%;
   height: 50px;
   border-radius: 10px;
   justify-self: center;
@@ -299,9 +307,8 @@ section > hr {
 
 .portfolio__container {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(2, 220px);
-  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(300px,25%));
+  grid-auto-rows: auto;  
   gap: 16px;
 }
 
@@ -309,12 +316,14 @@ section > hr {
   width: 100%;
   justify-self: center;
   align-self: center;
+  
 }
 
 .portfolio__link {
   display: flex;
   justify-content: center;
   align-content: center;
+  
 }
 
 .image_container {

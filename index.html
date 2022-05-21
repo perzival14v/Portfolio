@@ -12,13 +12,22 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./tablet.css" media="(min-width:768px)" />
 
     <title>Javier Valdez</title>
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <div class="link-container">
+          <a href="#about-me">Sobre mi</a>
+          <a href="#education">Educación</a>
+          <a href="#skills">Habilidades</a>
+          <a href="#portfolio">Portafolio</a>
+          <a href="#contact">Contáctame</a>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="home">
@@ -33,30 +42,33 @@
       </section>
       <section id="about-me" class="about-me">
         <h2>Sobre mi</h2>
-        <hr>
+        <hr />
         <article class="about-me__grid-container">
           <div class="about-me___info-section">
             <img
               src="assets/img/Javier_colores.jpg"
               alt="Foto de Javier Valdez"
             />
-
-            <p><strong>Nombre:</strong> Javier Andrés Valdez González</p>
-            <p><strong>Edad:</strong> 23 años</p>
-            <p><strong>Ubicación:</strong> Amatitlan, Guatemala</p>
+            <div>
+              <p><strong>Nombre:</strong> Javier Andrés Valdez González</p>
+              <p><strong>Edad:</strong> 23 años</p>
+              <p><strong>Ubicación:</strong> Amatitlan, Guatemala</p>
+            </div>
           </div>
 
-          <p class="about-me__description">
-            Me interesan mucho las tecnologías web de igual forma poseo alta
-            disposición para el aprendizaje de nuevas tecnologías y para el
-            trabajo en equipo.
-          </p>
-          <a href="#">Descargar CV</a>
+          <div class="about-me___description-section">
+            <p class="about-me__description">
+              Me interesan mucho las tecnologías web de igual forma poseo alta
+              disposición para el aprendizaje de nuevas tecnologías y para el
+              trabajo en equipo.
+            </p>
+            <a href="#">Descargar CV</a>
+          </div>
         </article>
       </section>
-      <section id="#education" class="education">
+      <section id="education" class="education">
         <h2>Educación</h2>
-        <hr>
+        <hr />
         <article class="item">
           <h3>Ingeniería en Ciencias y Sistemas</h3>
           <div class="item__info-container">
@@ -103,9 +115,9 @@
           </div>
         </article>
       </section>
-      <section class="skills">
+      <section id="skills" class="skills">
         <h2>Habilidades</h2>
-        <hr class="underline">
+        <hr class="underline" />
         <article class="item">
           <div class="sub-item-container">
             <div class="sub-item">
@@ -181,9 +193,9 @@
           </div>
         </article>
       </section>
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <h2>Portafolio</h2>
-        <hr>
+        <hr />
         <article class="portfolio__container">
           <div class="portfolio__item">
             <a class="portfolio__link" href="batatabit/index.html">
@@ -196,7 +208,7 @@
           </div>
         </article>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <p>Envíame un E-mail y trabajemos en tu proyecto 😉</p>
         <a href="mailto:javier.valdez.15v@gmail.com">Enviar E-mail</a>
         <div class="frase-container">

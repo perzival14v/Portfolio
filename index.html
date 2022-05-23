@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./tablet.css" media="(min-width:768px)" />
+    <link rel="stylesheet" href="./pc.css" media="(min-width:1440px)" />
 
     <title>Javier Valdez</title>
   </head>
@@ -21,8 +22,8 @@
     <header>
       <nav>
         <div class="link-container">
+          <a href="#">Inicio</a>
           <a href="#about-me">Sobre mi</a>          
-          <a href="#skills">Habilidades</a>
           <a href="#portfolio">Portafolio</a>
           <a href="#contact">Contáctame</a>
         </div>
@@ -32,7 +33,7 @@
       <section class="home">
         <article class="home__text-container">
           <h1 class="home__name">Javier Valdez</h1>
-          <hr />
+
           <h3 class="home__description">Desarrollador de software</h3>
         </article>
         <div class="home__button-container">
@@ -47,19 +48,20 @@
             <img
               src="assets/img/Javier_colores.jpg"
               alt="Foto de Javier Valdez"
-            />            
-              <p>Javier Andrés Valdez González</p>              
-              <p>Amatitlan, Guatemala</p>            
+            />
+            <p>Javier Andrés Valdez González</p>
+            <p>Amatitlan, Guatemala</p>
+
+            <div class="about-me___description-section">
+              <p class="about-me__description">
+                Me interesan mucho las tecnologías web de igual forma poseo alta
+                disposición para el aprendizaje de nuevas tecnologías y para el
+                trabajo en equipo.
+              </p>
+              <a href="#">Descargar CV</a>
+            </div>
           </div>
 
-          <div class="about-me___description-section">
-            <p class="about-me__description">
-              Me interesan mucho las tecnologías web de igual forma poseo alta
-              disposición para el aprendizaje de nuevas tecnologías y para el
-              trabajo en equipo.
-            </p>
-            <a href="#">Descargar CV</a>
-          </div>
           <div class="education">
             <h2>Educación</h2>
             <hr />
@@ -85,7 +87,7 @@
                 </div>
               </article>
             </div>
-            <div class="languages">            
+            <div class="languages">
               <article class="item">
                 <div class="sub-item-container">
                   <div class="sub-item">
@@ -111,91 +113,136 @@
                 </div>
               </article>
             </div>
-          </div>          
-        </article>
-      </section>
-      <section id="skills" class="skills">
-        <h2>Habilidades</h2>
-        <hr class="underline" />
-        <article class="item">
-          <div class="sub-item-container">
-            <div class="sub-item">
-              <p>HTML5</p>
-              <div class="item__stars">
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--off"></div>
-              </div>
-            </div>
-            <div class="sub-item">
-              <p>CSS3</p>
-              <div class="item__stars">
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--off"></div>
-              </div>
-            </div>
-            <div class="sub-item">
-              <p>Python</p>
-              <div class="item__stars">
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--off"></div>
-                <div class="star star--off"></div>
-              </div>
-            </div>
-            <div class="sub-item">
-              <p>Java</p>
-              <div class="item__stars">
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--off"></div>
-                <div class="star star--off"></div>
-              </div>
-            </div>
-            <div class="sub-item">
-              <p>C++</p>
-              <div class="item__stars">
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--off"></div>
-                <div class="star star--off"></div>
-                <div class="star star--off"></div>
-              </div>
-            </div>
-            <div class="sub-item">
-              <p>C#</p>
-              <div class="item__stars">
-                <div class="star star--on"></div>
-                <div class="star star--on"></div>
-                <div class="star star--off"></div>
-                <div class="star star--off"></div>
-                <div class="star star--off"></div>
-              </div>
-            </div>
-            <div class="sub-item">
-              <p>SQL</p>
-              <div class="item__stars">
-                <div class="star star--on"></div>
-                <div class="star star--off"></div>
-                <div class="star star--off"></div>
-                <div class="star star--off"></div>
-                <div class="star star--off"></div>
-              </div>
+            <div class="skills">
+              <h2>Habilidades</h2>
+              <hr class="underline" />
+              <article class="item">
+                <div class="sub-item-container">
+                  <div class="sub-item">
+                    <p>HTML5</p>
+                    <div class="item__stars">
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--off"></div>
+                    </div>
+                  </div>
+                  <div class="sub-item">
+                    <p>CSS3</p>
+                    <div class="item__stars">
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--off"></div>
+                    </div>
+                  </div>
+                  <div class="sub-item">
+                    <p>Python</p>
+                    <div class="item__stars">
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                    </div>
+                  </div>
+                  <div class="sub-item">
+                    <p>Java</p>
+                    <div class="item__stars">
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                    </div>
+                  </div>
+                  <div class="sub-item">
+                    <p>C++</p>
+                    <div class="item__stars">
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                    </div>
+                  </div>
+                  <div class="sub-item">
+                    <p>C#</p>
+                    <div class="item__stars">
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                    </div>
+                  </div>
+                  <div class="sub-item">
+                    <p>SQL</p>
+                    <div class="item__stars">
+                      <div class="star star--on"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </article>
-      </section>
+      </section>      
       <section id="portfolio" class="portfolio">
         <h2>Portafolio</h2>
         <hr />
         <article class="portfolio__container">
+          <div class="portfolio__item">
+            <a class="portfolio__link" href="batatabit/index.html">
+              <img
+                src="batatabit/assets/img/logo.svg"
+                alt="proyecto de batatabit"
+                class="image_container"
+              />
+            </a>
+          </div>
+          <div class="portfolio__item">
+            <a class="portfolio__link" href="batatabit/index.html">
+              <img
+                src="batatabit/assets/img/logo.svg"
+                alt="proyecto de batatabit"
+                class="image_container"
+              />
+            </a>
+          </div>
+          <div class="portfolio__item">
+            <a class="portfolio__link" href="batatabit/index.html">
+              <img
+                src="batatabit/assets/img/logo.svg"
+                alt="proyecto de batatabit"
+                class="image_container"
+              />
+            </a>
+          </div>
+          <div class="portfolio__item">
+            <a class="portfolio__link" href="batatabit/index.html">
+              <img
+                src="batatabit/assets/img/logo.svg"
+                alt="proyecto de batatabit"
+                class="image_container"
+              />
+            </a>
+          </div>
+          <div class="portfolio__item">
+            <a class="portfolio__link" href="batatabit/index.html">
+              <img
+                src="batatabit/assets/img/logo.svg"
+                alt="proyecto de batatabit"
+                class="image_container"
+              />
+            </a>
+          </div>
           <div class="portfolio__item">
             <a class="portfolio__link" href="batatabit/index.html">
               <img

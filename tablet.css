@@ -51,20 +51,18 @@ nav {
 }
 
 .about-me{
-  height: 100vh;
+  
+  height: auto;
   display: flex;
   flex-direction: column;
-
-
 }
 
 .about-me__grid-container{
-  grid-template-columns: repeat(auto-fit, minmax(300px, 50%));
-  grid-template-rows: repeat(auto-fit);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 50%));  
   grid-template-areas: 
     "me education"
-    "description education";
-  margin-right: 120px;
+    "me skills ";
+  margin-right: 100px;
 
   
   height: 100%;  
@@ -88,8 +86,16 @@ nav {
   grid-area: language;
 }
 
+.skills{
+  grid-area: skills;
+}
 
 .home__button-container{
-  
   display: none;
+}
+
+
+.portfolio__container {
+  grid-template-columns: repeat(auto-fit, minmax(200px,290px));
+  margin-right: 100px;
 }

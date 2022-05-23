@@ -34,6 +34,7 @@ main {
 
 section {
   position: relative;
+  min-height: 100vh;
   border-top: 1px solid var(--contrast1);
   background-color: var(--black1);
   width: 100%;  
@@ -55,10 +56,10 @@ section > hr {
   height: 90vh;
   width: 100%;
   background: rgba(26, 26, 26, 1);
-  /* background-image: url(https://media.giphy.com/media/xCfZ91fJS9gG03Spd7/giphy-downsized-large.gif);
-  background-repeat: no-repeat, repeat;
+  background-image: url(https://media.giphy.com/media/PkEj4bZPkbsFogzFoI/giphy.gif);
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
@@ -72,20 +73,21 @@ section > hr {
 
 .home__text-container hr {
   align-self: center;
-  width: 65vw;
+  width: 30vw;
 }
 
 .home__name {
   text-align: center;
-  font-size: 7.73vw;
+  font-size: 4.0rem;
   font-weight: 500;
   line-height: 60px;
+  color: var(--contrast1);
 }
 
 .home__description {
   text-align: center;
-  margin-top: 16px;
-  font-size: 3.38vw;
+  margin-top: 8px;
+  font-size: 2.4rem;
 }
 
 .home__button-container {
@@ -117,6 +119,7 @@ section > hr {
 
 .about-me {
   background-color: var(--black1);
+  height: auto;
 }
 
 .about-me h2 {
@@ -133,20 +136,23 @@ section > hr {
   
 }
 
-.about-me___info-section {
-  margin-top: 24px;
+.about-me___info-section {  
   display: flex;
   flex-direction: column;
-  width: 90%;    
-  justify-content: center;
+  width: 90%;      
   align-items: center;
+  margin-top: 16px;
 }
 
-.about-me___info-section img {
-  width: 200px;
-  border-radius: 200px;  
-  margin-bottom: 16px;
+.about-me___info-section img {  
+  width: 50%;    
+  border-radius: 40px;   
+  margin-bottom: 8px;   
 }
+
+/* .about-me___info-section img:hover{
+  content: url(assets/img/Javier_colores.jpg);
+} */
 
 .about-me___info-section p{  
   margin-bottom: 4px;
@@ -157,6 +163,7 @@ section > hr {
   display: flex;
   flex-direction: column;
   width: 85%;    
+  margin-top: 24px;
   justify-content: center;
   align-items: center;  
 }
@@ -300,19 +307,24 @@ section > hr {
   background-size: cover;
 }
 
+.skills{
+  position: relative;
+}
+
 .skills h2 {
   font-size: 2.4rem;
-  text-align: end;
-  margin: 15px 10% 15px 0;
+  text-align: start;
+  margin: 15px 0 15px 25px;
 }
 
 .skills .underline {
-  top: 47px;
-  left: auto;
+  top: 32px;
+  left: 25px;
   right: 10%;
 }
 .portfolio {
   padding-bottom: 15px;
+  height: auto;
 }
 
 .portfolio h2 {
@@ -322,8 +334,9 @@ section > hr {
 
 .portfolio__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,25%));
-  grid-auto-rows: auto;  
+  grid-template-columns: repeat(auto-fit, minmax(300px,100%));  
+  justify-items: center;
+  align-items: center;
   gap: 16px;
 }
 

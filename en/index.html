@@ -13,7 +13,11 @@
     />
 
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/tablet.css" media="(min-width:768px)" />
+    <link
+      rel="stylesheet"
+      href="../styles/tablet.css"
+      media="(min-width:768px)"
+    />
     <link rel="stylesheet" href="../styles/pc.css" media="(min-width:1440px)" />
 
     <title>Javier Valdez</title>
@@ -138,6 +142,16 @@
                     </div>
                   </div>
                   <div class="sub-item">
+                    <p>JavaScript</p>
+                    <div class="item__stars">
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                    </div>
+                  </div>
+                  <div class="sub-item">
                     <p>Python</p>
                     <div class="item__stars">
                       <div class="star star--on"></div>
@@ -157,6 +171,7 @@
                       <div class="star star--off"></div>
                     </div>
                   </div>
+
                   <div class="sub-item">
                     <p>C++</p>
                     <div class="item__stars">
@@ -197,22 +212,31 @@
         <h2>Portfolio</h2>
         <hr />
         <article class="portfolio__container">
-          <div class="portfolio__item">
-            <a class="portfolio__link" href="../batatabit/index.html">
-              <img
-                src="../batatabit/assets/img/logo.svg"
-                alt="proyecto de batatabit"
-                class="image_container"
-              />
-            </a>
+          <div
+            class="portfolio__item"
+            onclick="window.location='../batatabit/index.html';"
+          >
+            <img
+              src="../batatabit/assets/img/logo.svg"
+              alt="proyecto de batatabit"
+              class="image_container"
+            />
+          </div>
+          <div class="portfolio__item portfolio__item--more">
+            <a class="portfolio__link"> More in development </a>
           </div>
         </article>
       </section>
       <section id="contact" class="contact">
-        <p>Send me an E-mail and lets work in your project! 😉</p>
-        <a href="mailto:javier.valdez.15v@gmail.com">Send E-mail</a>
+        <div class="contact__button-container">
+          <p>Send me an E-mail and lets work in your project! 😉</p>
+          <a href="mailto:javier.valdez.15v@gmail.com">Send E-mail</a>
+          <img src="../assets/img/gmail.svg" alt="">
+        </div>
         <div class="frase-container">
-          <p class="frase">"We have succeed when we increase what make us unique"</p>
+          <p class="frase">
+            "We have succeed when we increase what make us unique"
+          </p>
         </div>
       </section>
     </main>

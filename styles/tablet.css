@@ -96,6 +96,31 @@ nav {
 
 
 .portfolio__container {
-  grid-template-columns: repeat(auto-fit, minmax(200px,290px));
+  grid-template-columns: repeat(auto-fit, minmax(200px,350px));
   margin-right: 100px;
+}
+
+
+.contact__button-container{
+  grid-template-areas: 
+  "logo contact-info"
+  "logo button";
+  margin-right: 120px;
+}
+
+.contact__button-container p{
+  grid-area: contact-info;
+}
+
+.contact__button-container a{
+  grid-area: button;
+}
+
+.contact__button-container img{
+  grid-area: logo;
+}
+
+.contact__button-container img{
+  display: inherit;
+  width: 30vw;
 }

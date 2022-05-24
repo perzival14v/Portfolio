@@ -111,7 +111,7 @@ section > hr {
 .home__button div {
   width: 52px;
   height: 35px;
-  background-image: url(assets/img/down-gold-arrow.svg);
+  background-image: url(../assets/img/down-gold-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -247,11 +247,11 @@ section > hr {
 }
 
 .education .item:nth-child(1) .item__info-container .item__logo {
-  background-image: url(assets/img/Usac_logo_1.svg);
+  background-image: url(../assets/img/Usac_logo_1.svg);
 }
 
 .education .item:nth-child(2) .item__info-container .item__logo {
-  background-image: url(assets/img/Liceo_Canadiense_logo.png);
+  background-image: url(../assets/img/Liceo_Canadiense_logo.png);
 }
 
 .education__sub-section-title {
@@ -294,14 +294,14 @@ section > hr {
 }
 
 .star--on {
-  background-image: url(assets/img/Star_on.svg);
+  background-image: url(../assets/img/Star_on.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .star--off {
-  background-image: url(assets/img/Star_off.svg);
+  background-image: url(../assets/img/Star_off.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -424,7 +424,7 @@ footer {
 .github {
   height: 30px;
   width: 30px;
-  background-image: url(assets/img/github.png);
+  background-image: url(../assets/img/github.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -434,7 +434,7 @@ footer {
 .linkedin {
   height: 30px;
   width: 30px;
-  background-image: url(assets/img/linkedin-3-64.png);
+  background-image: url(../assets/img/linkedin-3-64.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

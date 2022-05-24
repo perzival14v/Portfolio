@@ -46,7 +46,7 @@
         <article class="about-me__grid-container">
           <div class="about-me___info-section">
             <img
-              src="assets/img/Javier_colores.jpg"
+              src="../assets/img/Javier_colores.jpg"
               alt="Foto de Javier Valdez"
             />
             <p>Javier Andrés Valdez González</p>
@@ -54,7 +54,7 @@
 
             <div class="about-me___description-section">
               <p class="about-me__description">
-                Me interesan mucho las tecnologías web de igual forma poseo alta
+                Me interesan mucho el desarrollo web, poseo alta
                 disposición para el aprendizaje de nuevas tecnologías y para el
                 trabajo en equipo.
               </p>
@@ -139,6 +139,16 @@
                     </div>
                   </div>
                   <div class="sub-item">
+                    <p>JavaScript</p>
+                    <div class="item__stars">
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--on"></div>
+                      <div class="star star--off"></div>
+                      <div class="star star--off"></div>
+                    </div>
+                  </div>
+                  <div class="sub-item">
                     <p>Python</p>
                     <div class="item__stars">
                       <div class="star star--on"></div>
@@ -198,23 +208,31 @@
         <h2>Portafolio</h2>
         <hr />
         <article class="portfolio__container">
-          <div class="portfolio__item">
-            <a class="portfolio__link" href="../batatabit/index.html">
-              <img
-                src="../batatabit/assets/img/logo.svg"
-                alt="proyecto de batatabit"
-                class="image_container"
-              />
-            </a>
+          <div
+            class="portfolio__item"
+            onclick="window.location='../batatabit/index.html';"
+          >
+            <img
+              src="../batatabit/assets/img/logo.svg"
+              alt="proyecto de batatabit"
+              class="image_container"
+            />
           </div>
-          
+          <div class="portfolio__item portfolio__item--more">
+            <a class="portfolio__link"> Próximamente... </a>
+          </div>
         </article>
-      </section>
+      </section>      
       <section id="contact" class="contact">
-        <p>Envíame un E-mail y trabajemos en tu proyecto 😉</p>
-        <a href="mailto:javier.valdez.15v@gmail.com">Enviar E-mail</a>
+        <div class="contact__button-container">
+          <p>Envíame un E-mail y trabajemos en tu proyecto 😉</p>
+          <a href="mailto:javier.valdez.15v@gmail.com">Enviar E-mail</a>
+          <img src="../assets/img/gmail.svg" alt="">
+        </div>
         <div class="frase-container">
-          <p class="frase">"Triunfamos al maximizar lo que nos hace únicos"</p>
+          <p class="frase">
+            "We have succeed when we increase what make us unique"
+          </p>
         </div>
       </section>
     </main>

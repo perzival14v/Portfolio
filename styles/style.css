@@ -37,7 +37,7 @@ section {
   min-height: 100vh;
   border-top: 1px solid var(--contrast1);
   background-color: var(--black1);
-  width: 100%;  
+  width: 100%;
 }
 
 section h2 {
@@ -48,18 +48,18 @@ section > hr {
   position: absolute;
   width: 45px;
   top: 47px;
-  left: 25px;  
+  left: 25px;
   border-color: var(--contrast-red);
 }
 
 .home {
   height: 90vh;
   width: 100%;
-  background: rgba(26, 26, 26, 1);
+  /* background: rgba(26, 26, 26, 1);
   background-image: url(https://media.giphy.com/media/PkEj4bZPkbsFogzFoI/giphy.gif);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   display: flex;
   flex-direction: column;
 }
@@ -78,7 +78,7 @@ section > hr {
 
 .home__name {
   text-align: center;
-  font-size: 4.0rem;
+  font-size: 4rem;
   font-weight: 500;
   line-height: 60px;
   color: var(--contrast1);
@@ -130,52 +130,51 @@ section > hr {
 .about-me__grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 100%));
-  grid-auto-rows: auto;  
+  grid-auto-rows: auto;
   align-items: center;
-  justify-items: center;    
-  
+  justify-items: center;
 }
 
-.about-me___info-section {  
+.about-me___info-section {
   display: flex;
   flex-direction: column;
-  width: 90%;      
+  width: 90%;
   align-items: center;
   margin-top: 16px;
 }
 
-.about-me___info-section img {  
-  width: 50%;    
-  border-radius: 40px;   
-  margin-bottom: 8px;   
+.about-me___info-section img {
+  width: 50%;
+  border-radius: 40px;
+  margin-bottom: 8px;
 }
 
 /* .about-me___info-section img:hover{
   content: url(assets/img/Javier_colores.jpg);
 } */
 
-.about-me___info-section p{  
+.about-me___info-section p {
   margin-bottom: 4px;
   font-size: 1.4rem;
 }
 
-.about-me___description-section{
+.about-me___description-section {
   display: flex;
   flex-direction: column;
-  width: 85%;    
+  width: 85%;
   margin-top: 24px;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
-.about-me___description-section p {  
+.about-me___description-section p {
   margin-bottom: 12px;
-  font-size: 1.6rem;  
-  text-align: justify;  
+  font-size: 1.6rem;
+  text-align: justify;
 }
 
 .about-me__grid-container a {
-  text-decoration: none;    
+  text-decoration: none;
   height: 50px;
   width: 100%;
   border-radius: 10px;
@@ -191,19 +190,17 @@ section > hr {
 
   margin-top: 16px;
   margin-bottom: 16px;
-  
 }
 
-.education{
-  position: relative;
-  width: 100%;
+.education {
+  position: relative;  
 }
 
 .education hr {
   position: absolute;
   width: 45px;
   top: 47px;
-  left: 25px;  
+  left: 25px;
   border-color: var(--contrast-red);
 }
 
@@ -212,7 +209,7 @@ section > hr {
   margin: 15px 0 15px 25px;
 }
 
-.item {  
+.item {
   margin-left: 25px;
   margin-bottom: 30px;
 }
@@ -233,7 +230,7 @@ section > hr {
 }
 
 .item__info-container p {
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 .item__logo {
@@ -271,7 +268,6 @@ section > hr {
   align-items: center;
   justify-items: flex-end;
   width: 100%;
-  
 }
 
 .item__stars {
@@ -307,7 +303,7 @@ section > hr {
   background-size: cover;
 }
 
-.skills{
+.skills {
   position: relative;
 }
 
@@ -335,7 +331,7 @@ section > hr {
 .portfolio__container {
   height: 90vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,100%));  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 100%));
   justify-items: center;
   align-items: center;
   gap: 32px;
@@ -347,12 +343,11 @@ section > hr {
 
 .portfolio__item {
   height: 250px;
-  width: 100%;  
-  border-radius: 25px;  
+  width: 100%;
+  border-radius: 25px;
 }
 
-.portfolio__item--more{  
-    
+.portfolio__item--more {
   border: 1px solid var(--contrast1);
   display: flex;
   flex-direction: column;
@@ -360,28 +355,27 @@ section > hr {
   align-items: center;
 }
 
-.portfolio__item--more a{
+.portfolio__item--more a {
   max-width: 290px;
   font-size: 2.4rem;
 }
 
 .image_container {
   width: inherit;
-  height: inherit;   
-  
-  background-color: #faf8f7;   
-  border-radius: 25px;  
-}
+  height: inherit;
 
+  background-color: #faf8f7;
+  border-radius: 25px;
+}
 
 .contact {
   min-height: 92vh;
 }
 
-.contact__button-container{
+.contact__button-container {
   height: 70vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,100%));  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 100%));
   justify-items: center;
   align-items: center;
   gap: 16px;
@@ -391,7 +385,7 @@ section > hr {
   align-content: center;
 }
 
-.contact__button-container img{
+.contact__button-container img {
   display: none;
 }
 
@@ -465,4 +459,30 @@ footer {
   background-position: center;
   background-size: cover;
   border-radius: 60px;
+}
+
+
+/*ANIMACIONES*/
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+/*Aplicando Animaciones*/
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide-in {    
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+  }
 }

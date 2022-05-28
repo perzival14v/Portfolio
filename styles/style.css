@@ -55,12 +55,19 @@ section > hr {
 .home {
   height: 90vh;
   width: 100%;
-  /* background: rgba(26, 26, 26, 1);
-  background-image: url(https://media.giphy.com/media/PkEj4bZPkbsFogzFoI/giphy.gif);
+
+  background-image: url(https://media.giphy.com/media/7b8jdNUoFBdcoILjjv/giphy.gif);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
+}
+
+.home_image_background {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black1);
   display: flex;
+  opacity: 1;
   flex-direction: column;
 }
 
@@ -193,7 +200,7 @@ section > hr {
 }
 
 .education {
-  position: relative;  
+  position: relative;
 }
 
 .education hr {
@@ -461,28 +468,50 @@ footer {
   border-radius: 60px;
 }
 
-
-/*ANIMACIONES*/
-
-@keyframes slide-in {
+@keyframes upAndDown {
   0% {
-    transform: translateX(-10%);
-    opacity: 0;
+    transform: translateY(-20px);
+    opacity: 1;
   }
+
+  50% {
+    transform: translateY(20px);
+  }
+
   100% {
-    transform: translateX(0%);
+    transform: translateY(-20px);
     opacity: 1;
   }
 }
 
+@keyframes change-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }  
+}
 
-/*Aplicando Animaciones*/
 
 @media (prefers-reduced-motion: no-preference) {
-  .slide-in {    
-    animation-name: slide-in;
+  /*ANIMACION 4*/
+  .upDown {
+    animation-name: upAndDown;
     animation-duration: 1s;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
   }
+
+  /*ANIMACION 5*/
+  .change-opacity{
+    animation-name: change-opacity;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;    
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
 }

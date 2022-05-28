@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="rigth-in">
         <div class="link-container">
           <a href="#">Home</a>
           <a href="#about-me">About me</a>
@@ -35,12 +35,14 @@
     </header>
     <main>
       <section class="home">
-        <article class="home__text-container">
-          <h1 class="home__name">Javier Valdez</h1>
-          <h3 class="home__description">Software Developer</h3>
-        </article>
-        <div class="home__button-container">
-          <a class="home__button" href="#about-me"><div></div></a>
+        <div class="home_image_background change-opacity">
+          <article class="home__text-container">
+            <h1 class="home__name slide-left-in">Javier Valdez</h1>
+            <h3 class="home__description wype-enter">Software Developer</h3>
+          </article>
+          <div class="home__button-container">
+            <a class="home__button upDown" href="#about-me"><div></div></a>
+          </div>
         </div>
       </section>
       <section id="about-me" class="about-me">
@@ -49,13 +51,14 @@
         <article class="about-me__grid-container">
           <div class="about-me___info-section">
             <img
+              class="animation 1"
               src="../assets/img/Javier_colores.jpg"
               alt="Foto de Javier Valdez"
             />
-            <p>Javier Andrés Valdez González</p>
-            <p>Amatitlan, Guatemala</p>
+            <p class="animation 1">Javier Andrés Valdez González</p>
+            <p class="animation 1">Amatitlan, Guatemala</p>
 
-            <div class="about-me___description-section">
+            <div class="about-me___description-section animation 3">
               <p class="about-me__description">
                 I'm very interested in web development, I also have a high
                 disposition to learn new technologies and teamwork.
@@ -68,7 +71,7 @@
             <h2>Studies</h2>
             <hr />
             <div class="education__items-container">
-              <article class="item">
+              <article class="item animation 2">
                 <h3>Bachelor in Science and Systems Engineering</h3>
                 <div class="item__info-container">
                   <div class="item__logo"></div>
@@ -78,7 +81,7 @@
                   </div>
                 </div>
               </article>
-              <article class="item">
+              <article class="item animation 2">
                 <h3>High school degree in Computer Science</h3>
                 <div class="item__info-container">
                   <div class="item__logo"></div>
@@ -90,7 +93,7 @@
               </article>
             </div>
             <div class="languages">
-              <article class="item">
+              <article class="item animation 2">
                 <div class="sub-item-container">
                   <div class="sub-item">
                     <p>Spanish</p>
@@ -118,9 +121,9 @@
             <div class="skills">
               <h2>Skills</h2>
               <hr class="underline" />
-              <article class="item">
+              <article class="item ">
                 <div class="sub-item-container">
-                  <div class="sub-item">
+                  <div class="sub-item animation 2">
                     <p>HTML5</p>
                     <div class="item__stars">
                       <div class="star star--on"></div>
@@ -130,7 +133,7 @@
                       <div class="star star--off"></div>
                     </div>
                   </div>
-                  <div class="sub-item">
+                  <div class="sub-item animation 2">
                     <p>CSS3</p>
                     <div class="item__stars">
                       <div class="star star--on"></div>
@@ -140,7 +143,7 @@
                       <div class="star star--off"></div>
                     </div>
                   </div>
-                  <div class="sub-item">
+                  <div class="sub-item animation 2">
                     <p>JavaScript</p>
                     <div class="item__stars">
                       <div class="star star--on"></div>
@@ -150,7 +153,7 @@
                       <div class="star star--off"></div>
                     </div>
                   </div>
-                  <div class="sub-item">
+                  <div class="sub-item animation 2">
                     <p>Python</p>
                     <div class="item__stars">
                       <div class="star star--on"></div>
@@ -160,7 +163,7 @@
                       <div class="star star--off"></div>
                     </div>
                   </div>
-                  <div class="sub-item">
+                  <div class="sub-item animation 2">
                     <p>Java</p>
                     <div class="item__stars">
                       <div class="star star--on"></div>
@@ -171,7 +174,7 @@
                     </div>
                   </div>
 
-                  <div class="sub-item">
+                  <div class="sub-item animation 2">
                     <p>C++</p>
                     <div class="item__stars">
                       <div class="star star--on"></div>
@@ -181,7 +184,7 @@
                       <div class="star star--off"></div>
                     </div>
                   </div>
-                  <div class="sub-item">
+                  <div class="sub-item animation 2">
                     <p>C#</p>
                     <div class="item__stars">
                       <div class="star star--on"></div>
@@ -191,7 +194,7 @@
                       <div class="star star--off"></div>
                     </div>
                   </div>
-                  <div class="sub-item">
+                  <div class="sub-item animation 2">
                     <p>SQL</p>
                     <div class="item__stars">
                       <div class="star star--on"></div>
@@ -210,9 +213,9 @@
       <section id="portfolio" class="portfolio">
         <h2>Portfolio</h2>
         <hr />
-        <article class="portfolio__container">
+        <article class="portfolio__container ">
           <div
-            class="portfolio__item"
+            class="portfolio__item animation 6"
             onclick="window.location='../batatabit/index.html';"
           >
             <img
@@ -228,9 +231,13 @@
       </section>
       <section id="contact" class="contact">
         <div class="contact__button-container">
-          <p>Send me an E-mail and lets work in your project! 😉</p>
-          <a href="mailto:javier.valdez.15v@gmail.com">Send E-mail</a>
-          <img src="../assets/img/gmail.svg" alt="" />
+          <p class="animation 2">
+            Send me an E-mail and lets work in your project! 😉
+          </p>
+          <a class="animation 2" href="mailto:javier.valdez.15v@gmail.com"
+            >Send E-mail</a
+          >
+          <img class="animation 1" src="../assets/img/gmail.svg" alt="" />
         </div>
         <div class="frase-container">
           <p class="frase">

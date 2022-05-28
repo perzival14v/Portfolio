@@ -101,16 +101,16 @@ nav {
 .contact__button-container{
   grid-template-areas: 
   "logo contact-info"
-  "logo button";
+  "logo contact-info";
   margin-right: 120px;
 }
 
-.contact__button-container p{
+.contact-info{
   grid-area: contact-info;
-}
-
-.contact__button-container a{
-  grid-area: button;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact__button-container img{
@@ -119,5 +119,5 @@ nav {
 
 .contact__button-container img{
   display: inherit;
-  width: 30vw;
+  width: 20vw;
 }

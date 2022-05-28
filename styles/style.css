@@ -54,21 +54,21 @@ section > hr {
 
 .home {
   height: 90vh;
-  width: 100%;
-
+  width: 100%;  
   background-image: url(https://media.giphy.com/media/7b8jdNUoFBdcoILjjv/giphy.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .home_image_background {
   width: 100%;
   height: 100%;
   background-color: var(--black1);
-  display: flex;
-  opacity: 1;
-  flex-direction: column;
+  position: absolute;
 }
 
 .home__text-container {
@@ -377,19 +377,19 @@ section > hr {
 
 .contact {
   min-height: 92vh;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
 }
 
 .contact__button-container {
   height: 70vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 100%));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 80%));
   justify-items: center;
   align-items: center;
-  gap: 16px;
   margin-left: 25px;
-  margin-right: 25px;
-  justify-content: center;
-  align-content: center;
+  margin-right: 25px;  
 }
 
 .contact__button-container img {
@@ -470,8 +470,8 @@ footer {
 
 @keyframes upAndDown {
   0% {
-    transform: translateY(-20px); 
-    opacity: 0.25;   
+    transform: translateY(-20px);
+    opacity: 0.5;
   }
 
   50% {
@@ -490,10 +490,9 @@ footer {
     opacity: 1;
   }
   100% {
-    opacity: 0.8;
-  }  
+    opacity: 0.4;
+  }
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   /*ANIMACION 4*/
@@ -508,13 +507,12 @@ footer {
   }
 
   /*ANIMACION 5*/
-  .change-opacity{
+  .change-opacity {
     animation-name: change-opacity;
     animation-duration: 3s;
     animation-delay: 2s;
-    animation-iteration-count: 1;    
+    animation-iteration-count: 1;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
   }
-
 }

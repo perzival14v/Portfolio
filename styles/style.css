@@ -69,6 +69,7 @@ section > hr {
   height: 100%;
   background-color: var(--black1);
   position: absolute;
+  z-index: 0;
 }
 
 .home__text-container {
@@ -76,6 +77,7 @@ section > hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
 }
 
 .home__text-container hr {

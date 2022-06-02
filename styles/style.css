@@ -2,7 +2,7 @@
   --black1: #1a1a1a;
   --grey1: #7c7c7d;
   --grey2: #404040;
-  --just-white: #f2f2f1;
+  --just-white: #f2f2f2;
   --contrast1: #ffda4a;
   --contrast-red: #e60000;
   --contrast2: #f6a901;
@@ -35,9 +35,11 @@ main {
 section {
   position: relative;
   min-height: 100vh;
-  border-top: 1px solid var(--contrast1);
   background-color: var(--black1);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section h2 {
@@ -52,13 +54,19 @@ section > hr {
   border-color: var(--contrast-red);
 }
 
+.container {
+  max-width: 1220px;
+}
+
 .home {
   height: 90vh;
-  width: 100%;  
-  background-image: url(https://media.giphy.com/media/7b8jdNUoFBdcoILjjv/giphy.gif);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  width: 100%;
+  background: rgb(9, 6, 13);
+  background: linear-gradient(
+    180deg,
+    rgba(9, 6, 13, 1) 34%,
+    rgba(8, 24, 39, 1) 100%
+  );
   display: flex;
   flex-direction: column;
   position: relative;
@@ -87,20 +95,24 @@ section > hr {
 
 .home__name {
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 500;
   line-height: 60px;
-  color: var(--contrast1);
+  color: var(--just-white);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 .home__description {
   text-align: center;
   margin-top: 8px;
-  font-size: 2.4rem;
+  font-size: 2rem;
+  font-family: "Libre Baskerville", serif;
+  color: #f29b31;
 }
 
 .home__button-container {
-  top: 80vh;
+  top: 88vh;
   position: absolute;
 
   width: 100%;
@@ -127,7 +139,12 @@ section > hr {
 }
 
 .about-me {
-  background-color: var(--black1);
+  background: rgb(8, 24, 39);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 24, 39, 1) 0%,
+    rgba(30, 66, 90, 1) 100%
+  );
   height: auto;
 }
 
@@ -154,7 +171,7 @@ section > hr {
 
 .about-me___info-section img {
   width: 50%;
-  border-radius: 40px;
+  background-color: #1e425a;
   margin-bottom: 8px;
 }
 
@@ -380,7 +397,7 @@ section > hr {
 .contact {
   min-height: 92vh;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   align-items: center;
 }
 
@@ -391,7 +408,7 @@ section > hr {
   justify-items: center;
   align-items: center;
   margin-left: 25px;
-  margin-right: 25px;  
+  margin-right: 25px;
 }
 
 .contact__button-container img {

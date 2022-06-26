@@ -1,0 +1,11 @@
+@import "../../../../colors.scss";
+
+.button{
+  background-color: $contrast-color1;
+  max-width: 150px;
+  height: inherit;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

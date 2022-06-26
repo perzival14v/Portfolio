@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-social-media-icon',
@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class SocialMediaIconComponent implements OnInit {
 
   constructor() { }
+
+  @Input() name=""
+  @Input() src=""
+  @Input() href=""
 
   ngOnInit(): void {
   }

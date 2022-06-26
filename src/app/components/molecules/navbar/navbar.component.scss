@@ -1,4 +1,4 @@
-@import "../../../../colors.scss";
+@import "/src/colors_and_fonts.scss";
 
 .navbar {
   width: 100%;
@@ -7,12 +7,15 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background-color: $background-color2;
 
   &__hamburger {
     // background-color: beige;
     width: 4rem;
     height: 4rem;
     margin-right: 0.5rem;
+    color: white;
+
   }
 
   &__option-container {

@@ -12,6 +12,7 @@ import { SkillComponent } from './components/atoms/skill/skill.component';
 import { ProjectCardComponent } from './components/molecules/project-card/project-card.component';
 import { FooterComponent } from './components/atoms/footer/footer.component';
 import { ContactMeComponent } from './components/molecules/contact-me/contact-me.component';
+import { LandingComponent } from './components/templates/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactMeComponent } from './components/molecules/contact-me/contact-me
     SkillComponent,
     ProjectCardComponent,
     FooterComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

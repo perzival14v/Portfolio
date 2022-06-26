@@ -1,0 +1,50 @@
+@import "/src/colors_and_fonts.scss";
+
+.landing {
+  display: grid;
+  justify-content: center;
+  justify-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "title title title"
+    "subtitle subtitle subtitle"
+    "image image social";
+
+  margin-top: 20px;
+
+  &__social-container {
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3.0rem;
+  }
+
+  &__social-icon{
+    max-width: 70px;
+    width: 80%;
+  }
+
+  &__img {
+    grid-area: image;
+    max-width: 60rem;
+    margin-top: 3.0rem;
+  }
+
+  &__subtitle {
+    grid-area: subtitle;
+    font-family: $font-3;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 1.0rem;
+  }
+  &__title {
+    grid-area: title;
+    font-family: $font-1;
+    font-size: 9.5rem;
+    font-weight: 700;
+
+    text-align: center;
+  }
+}

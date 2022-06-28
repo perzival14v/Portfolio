@@ -13,6 +13,7 @@ import { ProjectCardComponent } from './components/molecules/project-card/projec
 import { FooterComponent } from './components/atoms/footer/footer.component';
 import { ContactMeComponent } from './components/molecules/contact-me/contact-me.component';
 import { LandingComponent } from './components/templates/landing/landing.component';
+import { AboutMeComponent } from './components/templates/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LandingComponent } from './components/templates/landing/landing.compone
     ProjectCardComponent,
     FooterComponent,
     ContactMeComponent,
-    LandingComponent
+    LandingComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

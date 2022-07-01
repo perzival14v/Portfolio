@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { timeout } from 'rxjs';
+import { skillsData } from "../../../data/skills.data";
+import { studiesData } from "../../../data/studies.data";
+import { skill } from '../../models/skill.model';
+import { study } from '../../models/study.model';
+
 
 @Component({
   selector: 'app-about-me',
@@ -11,6 +15,19 @@ export class AboutMeComponent implements OnInit {
 
   img = '../../../../assets/Images/Javier.jpg';
   infoSelected = 1;
+  skillLocalData: Array<skill> = []
+  studiesLocalData: Array<study> =[]
+
+  private selectInfo(){
+    for(let item of skillsData.entries()){
+      this.skillLocalData.push(item[1])
+    }
+
+    for(let item2 of studiesData.entries()){
+      this.studiesLocalData.push(item2[1])
+    }
+
+  }
 
   changeInfo(number: number) {
     this.infoSelected = number;
@@ -30,5 +47,7 @@ export class AboutMeComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.selectInfo()
+  }
 }

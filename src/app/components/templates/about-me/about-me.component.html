@@ -1,149 +1,73 @@
-<div class="container">
+<div class="about-me">
   <h3>About me</h3>
-  <div class="side-nav-menu">
-    <div (click)="changeInfo(1)" [ngClass]="{ selected: infoSelected === 1 }">
-      <p>Profile</p>
+  <div class="about-me__component">
+    <div class="about-me__side-nav-menu">
+      <div (click)="changeInfo(1)" [ngClass]="{ selected: infoSelected === 1 }">
+        <p>Profile</p>
+      </div>
+      <div (click)="changeInfo(2)" [ngClass]="{ selected: infoSelected === 2 }">
+        <p>Studies</p>
+      </div>
+      <div (click)="changeInfo(3)" [ngClass]="{ selected: infoSelected === 3 }">
+        <p>Skills</p>
+      </div>
     </div>
-    <div (click)="changeInfo(2)" [ngClass]="{ selected: infoSelected === 2 }">
-      <p>Studies</p>
-    </div>
-    <div (click)="changeInfo(3)" [ngClass]="{ selected: infoSelected === 3 }">
-      <p>Skills</p>
+
+    <div class="about-me__info-container">
+      <div
+        class="about-me-info"
+        [ngClass]="{
+          show: infoSelected === 1,
+          noShow: infoSelected !== 1
+        }"
+      >
+        <p>
+          Software developer. I like to do both frontend and backend in a web
+          application
+        </p>
+        <p>I have to say that I enjoy the backend more.</p>
+        <p>
+          I focus on giving a good UI/UX experience and on the little details.
+        </p>
+        <p>
+          I am passionate about technology and I love discovering new ways to
+          achieve my goals.
+        </p>
+        <p>I am constantly learning. Student at USAC and Platzi 🎓.</p>
+      </div>
+      <div
+        class="studies"
+        [ngClass]="{
+          show: infoSelected === 2,
+          noShow: infoSelected !== 2
+        }"
+      >
+        <app-studies-info
+          *ngFor="let study of studiesLocalData"
+          [img]="study.img"
+          [title]="study.title"
+          [subtitle]="study.subtitle"
+          [href]="study.href"
+        >
+        </app-studies-info>
+      </div>
+      <div
+        class="skills"
+        [ngClass]="{
+          show: infoSelected === 3,
+          noShow: infoSelected !== 3
+        }"
+      >
+        <app-skill
+          *ngFor="let item of skillLocalData"
+          [src]="item.imageSrc"
+          [text]="item.text"
+        ></app-skill>
+      </div>
     </div>
   </div>
 
-  <div class="info-container">
-    <div
-      class="about-me-info"
-      [ngClass]="{
-        show: infoSelected === 1,
-        noShow: infoSelected !== 1
-      }"
-    >
-      <p>
-        Software developer. I like to do both frontend and backend in a web
-        application, but I have to say that I enjoy the backend more. I focus on
-        giving a good UI/UX experience and on the little details. I am
-        passionate about technology and I love discovering new ways to achieve
-        my goals. I am constantly learning. Student at USAC 🎓 and Platzi 😄.
-      </p>
-    </div>
-    <div
-      class="studies"
-      [ngClass]="{
-        show: infoSelected === 2,
-        noShow: infoSelected !== 2
-      }"
-    >
-      <app-studies-info
-        [img]="'../../../../assets/Images/Usac_logo.jpg'"
-        [title]="'Bachelor in Science and Systems Engineering'"
-        [subtitle]="'San Carlos University'"
-        [href]="
-          'https://drive.google.com/file/d/1jmkDW9zB9iMjDlw7SDh_ua_ygcVTEVyp/view?usp=sharing'
-        "
-      >
-      </app-studies-info>
-      <app-studies-info
-        [img]="'../../../../assets/Images/Platzi_logo.jpg'"
-        [title]="'Angular course'"
-        [subtitle]="'Platzi'"
-        [href]="
-          'https://drive.google.com/file/d/1Uro4e6i1YhCZhVtXJe8mAPf9q079g7KY/view?usp=sharing'
-        "
-      >
-      </app-studies-info>
-      <app-studies-info
-        [img]="'../../../../assets/Images/Platzi_logo.jpg'"
-        [title]="'Frontend Developer course'"
-        [subtitle]="'Platzi'"
-        [href]="
-          'https://drive.google.com/file/d/1nwz9NVqZya2YuhHijd9xaOtw8owrk_AP/view?usp=sharing'
-        "
-      >
-      </app-studies-info>
-      <app-studies-info
-        [img]="'../../../../assets/Images/Platzi_logo.jpg'"
-        [title]="'Professional JavaScript course'"
-        [subtitle]="'Platzi'"
-        [href]="
-          'https://drive.google.com/file/d/1Sg74KlMwclMv--gECi0R2ahT2r9hd7m8/view?usp=sharing'
-        "
-      >
-      </app-studies-info>
-      <app-studies-info
-        [img]="'../../../../assets/Images/Platzi_logo.jpg'"
-        [title]="'TypeScript course'"
-        [subtitle]="'Platzi'"
-        [href]="
-          'https://drive.google.com/file/d/1To7mLc90guYWybEaNlc7r3LuaxtaFMY1/view?usp=sharing'
-        "
-      >
-      </app-studies-info>
-      <app-studies-info
-        [img]="'../../../../assets/Images/Platzi_logo.jpg'"
-        [title]="'Animation with CSS course'"
-        [subtitle]="'Platzi'"
-        [href]="
-          'https://drive.google.com/file/d/1wepKF5HBjmTi9lXoNSyTh5AGtkxRGiuj/view?usp=sharing'
-        "
-      >
-      </app-studies-info>
-    </div>
-    <div
-      class="skills"
-      [ngClass]="{
-        show: infoSelected === 3,
-        noShow: infoSelected !== 3
-      }"
-    >
-      <app-skill
-        [src]="'../../../assets/Icons/Skills/HTML5.svg'"
-        [text]="'HTML'"
-      ></app-skill>
-      <app-skill
-        [src]="'../../../../assets/Icons/Skills/CSS3.svg'"
-        [text]="'CSS'"
-      ></app-skill>
-      <app-skill
-        [src]="'../../../../assets/Icons/Skills/JS.svg'"
-        [text]="'JavaScript'"
-      ></app-skill>
-      <app-skill
-        [src]="'../../../../assets/Icons/Skills/Typescript.svg'"
-        [text]="'TypeScript'"
-      ></app-skill>
-      <app-skill
-        [src]="'../../../../assets/Icons/Skills/Angular.svg'"
-        [text]="'Angular'"
-      ></app-skill>
-      <app-skill
-        [src]="'../../../../assets/Icons/Skills/Sass.svg'"
-        [text]="'Sass'"
-      ></app-skill>
-      <app-skill
-        [src]="'../../../../assets/Icons/Skills/Python.svg'"
-        [text]="'Python'"
-      ></app-skill>
-      <app-skill
-        [src]="'../../../../assets/Icons/Skills/Java.svg'"
-        [text]="'Java'"
-      ></app-skill>
-      <app-skill
-        [src]="'../../../../assets/Icons/Skills/C.svg'"
-        [text]="'C/C++'"
-      ></app-skill>
-      <app-skill
-        [src]="'../../../../assets/Icons/Skills/sql.svg'"
-        [text]="'SQL'"
-      ></app-skill>
-      <app-skill
-        [src]="'../../../../assets/Icons/Skills/git.svg'"
-        [text]="'Git'"
-      ></app-skill>
-    </div>
-  </div>
-  <div class="ilustrations show">
+  <div class="about-me__ilustrations show">
     <img src="{{ img }}" alt="" />
   </div>
 </div>

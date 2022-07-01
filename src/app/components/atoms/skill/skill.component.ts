@@ -11,7 +11,6 @@ export class SkillComponent implements OnInit {
 
   @Input() src=""
   @Input() text=""
-  @Input() height=""
 
   ngOnInit(): void {
   }

@@ -1,27 +1,24 @@
 @import "/src/colors_and_fonts.scss";
 $margintop: 24px;
 
-.container {
-  max-width: 1200px;
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: $margintop;
-
+.about-me {
   h3 {
     align-self: flex-start;
     font-size: 4rem;
     font-family: $font-1;
   }
 
-  .side-nav-menu {
+  &__component {
+    width: 100%;
+  }
+
+  &__side-nav-menu {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     margin-top: $margintop;
-    div{
+    cursor: pointer;
+    div {
       width: 100%;
       height: 40px;
       display: flex;
@@ -37,12 +34,12 @@ $margintop: 24px;
     }
   }
 
-  .info-container {
+  &__info-container {
     margin-top: $margintop;
     width: 100%;
   }
 
-  .ilustrations {
+  &__ilustrations {
     margin-top: $margintop;
     img {
       width: 100%;
@@ -53,20 +50,19 @@ $margintop: 24px;
 
 .about-me-info {
   p {
-    font-family: $font-2;
+    font-family: $font-1;
     font-size: 2.1rem;
+    font-weight: 300;
     text-align: justify;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
   }
-}
-
-.studies {
 }
 
 .skills {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
   justify-items: start;
   gap: 16px 16px;
 }
@@ -80,6 +76,45 @@ $margintop: 24px;
   display: none;
 }
 
-.selected{
+.selected {
   background-color: $contrast-color2;
+}
+
+@media only screen and (min-width: 1023px) {
+  .about-me {
+    display: grid;
+    grid-template-areas:
+      "title  title title  "
+      "image image  comp"
+      "image image  comp";
+    column-gap: 1.5rem;
+    row-gap: 5.5rem;
+
+    h3 {
+      grid-area: title;
+    }
+
+    &__component {
+      grid-area: comp;
+      width: 60rem;
+
+      align-self: flex-end;
+    }
+
+    &__side-nav-menu {
+      align-self: flex-start;
+      margin-top: 0;
+    }
+
+    &__info-container {
+    }
+
+    &__ilustrations {
+      grid-area: image;
+      width: 60%;
+      max-width: 300px;
+      margin-top: 0;
+      justify-self: center;
+    }
+  }
 }

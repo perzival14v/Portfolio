@@ -18,10 +18,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 3.0rem;
+    margin-top: 3rem;
   }
 
-  &__social-icon{
+  &__social-icon {
     max-width: 70px;
     width: 80%;
   }
@@ -29,7 +29,7 @@
   &__img {
     grid-area: image;
     max-width: 60rem;
-    margin-top: 3.0rem;
+    margin-top: 3rem;
   }
 
   &__subtitle {
@@ -37,7 +37,7 @@
     font-family: $font-3;
     font-size: 4rem;
     text-align: center;
-    margin-top: 1.0rem;
+    margin-top: 1rem;
   }
   &__title {
     grid-area: title;
@@ -46,5 +46,34 @@
     font-weight: 700;
 
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+
+  .landing {
+
+    grid-template-areas:
+      "title title image"
+      "title title image"
+      "subtitle subtitle image"
+      "social social image";
+
+    &__social-container {
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 2.0rem;
+      align-self: flex-start;
+    }
+
+    &__img {
+    }
+    &__social-icon {
+    }
+    &__subtitle {
+    }
+    &__title {
+      align-self: flex-end;
+    }
   }
 }

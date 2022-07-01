@@ -3,14 +3,15 @@
 .navbar {
   width: 100%;
   height: 6rem;
-  // background-color: orange;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   background-color: $background-color2;
+  font-size: 1.8rem;
+  font-family: $font-1;
+
 
   &__hamburger {
-    // background-color: beige;
     width: 4rem;
     height: 4rem;
     margin-right: 0.5rem;
@@ -22,6 +23,8 @@
     display: none;
   }
 
+
+
 }
 
 @media only screen and (min-width: 426px) {
@@ -32,18 +35,33 @@
 
     &__button {
       width: 12rem;
-      height: 90%;
-      margin-right: 1.3rem;
+      height: 70%;
+      margin-right: 2.0rem;
     }
     &__option {
-      // background-color: brown;
-      margin-right: 1.3rem;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a{
+        color: white;
+      }
     }
+
+    &__option:hover{
+      a{
+        color: $contrast-color2;
+        transform: scale(1.1,1.1);
+        transition: color 0.2s ease-out 0s, transform 0.2s ease-out 0s;
+      }
+    }
+
+
     &__option-container {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      // background-color: aqua;
+      column-gap: 2.0rem;
       width: 70%;
       height: inherit;
     }

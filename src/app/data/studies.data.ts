@@ -5,8 +5,8 @@ let studiesData = new Map<number, study>([
   [0,{
     img:"assets/Images/Usac_logo.jpg",
     title:"Bachelor in Science and Systems Engineering",
-    subtitle:"San Carlos University",
-    href:"https://drive.google.com/file/d/1jmkDW9zB9iMjDlw7SDh_ua_ygcVTEVyp/view?usp=sharing"
+    subtitle:"San Carlos University of Guatemala",
+    href:""
   }],
   [1,{
     img:"assets/Images/Platzi_logo.jpg",
